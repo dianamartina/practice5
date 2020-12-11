@@ -14,6 +14,7 @@ function UserItem(props) {
                 }
                 <button onClick={ () => deleteUser(id) }>Delete user</button>                
             </div>
+            
         );    
 }
 export default UserItem;

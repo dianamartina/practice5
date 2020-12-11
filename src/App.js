@@ -8,7 +8,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      background: 'white',
+      background: '#ffffff',
       users: []
     };    
   }
@@ -17,8 +17,8 @@ class App extends React.Component {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(data => {
-        // Inainte de a actualiza state-ul, filtram userii, astfel incat sa ramanem doar cu primii 5.
-        data = data.filter(user => user.id < 6);
+        // Inainte de a actualiza state-ul, filtram userii, astfel incat sa ramanem doar cu primii 9.
+        data = data.filter(user => user.id < 10);
         // Pentru fiecare user ramas, ii setam valoarea false pentru cheia isGoldClient
         data.forEach(user => {
           user.isGoldClient = false;
@@ -100,15 +100,29 @@ class App extends React.Component {
     
     return(
       <div className="app" style={{background: this.state.background}}>
-        <h1>Practice 4</h1>
+        <h1>Practice 4</h1> 
+        {/* <div className="app-circle-l-bkground"></div>
+        <div className="app-circle-m-bkground"></div>
+      <div className="app-circle-s-bkground"></div> */}
+      <div className="app-box-form">
+        <div className="app-change-bkground">
+          <h3>Change background </h3>
+          <p>You can change the background color by pressing the button below</p>
+          <input type="color" onChange={(event) => this.changeColor(event)} value={this.state.background}/>          
+        </div>
+        <div >
+          <UserAddForm submitAddForm={(event, name, email, isGoldClient) => this.submitAddForm(event, name, email, isGoldClient)}/>
+
+        </div>
+      </div>
         
-        <UserAddForm submitAddForm={(event, name, email, isGoldClient) => this.submitAddForm(event, name, email, isGoldClient)}/>        
+        
+
 
         {/* Randam componenta UserList, careia ii trimitem ca proprietati userii din state. */}
         <UserList users={this.state.users} deleteUser={(id)=>this.deleteUser(id)} />
         
-        <h3>Change background color</h3>
-        <input type="color" onChange={(event) => this.changeColor(event)}/>
+        
       </div>
     );
   }

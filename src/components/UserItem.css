@@ -1,6 +1,32 @@
 .user-item {
-  background-color: #eeeeee;
-  padding: 5px 10px 10px;
+  border: 1px solid #009688;
+  margin-bottom: 3px;
+  padding: 5px 25px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  margin-bottom: 10px;
+.app .user-item h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.user-item button,
+.user-item button:focus {
+  background-color: #0e2a47;
+  border: 1px solid #0e2a47;
+  border-radius: 20px;
+  width: 100px;
+  height: 35px;
+  /* padding: 6px 8px; */
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+}
+
+.user-item button:hover {
+  background-color: #009688;
+  border: 1px solid #009688;
 }

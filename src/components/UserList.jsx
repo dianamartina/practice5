@@ -1,12 +1,13 @@
 import React from 'react';
 import UserItem from './UserItem';
+import './UserList.css';
 
 // Observatie: Componenta UserList a redevenit o componenta declarata cu function.
 function UserList(props){
     const {users, deleteUser} = props;          
     
       return (
-        <div>
+        <div className="user-list">
             <h2>Users list:</h2>
             { users.map((user, index) => {
                 return <UserItem

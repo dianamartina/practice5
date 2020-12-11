@@ -58,7 +58,7 @@ class UserAddForm extends React.Component {
                     onChange={(event) => this.updateIsGoldClient(event)}
                 />
 
-                <input type="submit" value="Add user"/>
+                <input className="user-add-form-btn" type="submit" value="Add user"/>
             </form>
         )
     }
