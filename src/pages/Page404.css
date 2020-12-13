@@ -1,0 +1,35 @@
+.page404 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page404 h1 {
+  color: #c4c4c4;
+  font-size: 120px;
+}
+
+.page404 p {
+  font-size: 20px;
+}
+
+.page404 button,
+.page404 button:focus {
+  background-color: #0e2a47;
+  border: 1px solid #0e2a47;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #ffffff;
+  width: 200px;
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+}
+
+.page404 button:hover {
+  background-color: #009688;
+  border: 1px solid #009688;
+}

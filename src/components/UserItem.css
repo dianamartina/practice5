@@ -10,6 +10,15 @@
 .app .user-item h3 {
   font-weight: bold;
   font-size: 16px;
+  width: 40%;
+}
+
+.app .user-item p {
+  width: 40%;
+}
+
+.user-item .is-gold-client {
+  width: 160px;
 }
 
 .user-item button,

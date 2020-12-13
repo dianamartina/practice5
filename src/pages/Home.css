@@ -1,0 +1,39 @@
+.home {
+  padding: 20px 30px 50px;
+}
+
+.home-box-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.home-change-bkground {
+  color: #ffffff;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #750e51;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230e2a47' fill-opacity='0.59' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.home-change-bkground h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.home-change-bkground p {
+  font-size: 12px;
+}
+
+.home-change-bkground input,
+.home-change-bkground input:focus {
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 5px 15px;
+  outline: none;
+  /* width: 100px; */
+}
